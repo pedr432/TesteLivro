@@ -2,16 +2,18 @@ package br.com.Livro.model;
 
 public class Livro {
 	
-	String titulo;
-	String autor;
-	int num_pag;
-	double preco;
+private String titulo;
+	private String autor;
+	private int num_pag;
+	private double preco;
+	private static int historico;
 	
 		public Livro() {
 			this.titulo = " ";
 			this.autor = " ";
 			this.num_pag = 0;
 			this.preco = 0.0;
+			Livro.historico++;
 		}
 		
 		public Livro(String titulo, String autor, int num_pag, double preco) {
@@ -19,6 +21,7 @@ public class Livro {
 			this.autor = autor;
 			this.num_pag = num_pag;
 			this.preco = preco;
+			Livro.historico = 1;
 		}
 		
 		public String getTitulo() {

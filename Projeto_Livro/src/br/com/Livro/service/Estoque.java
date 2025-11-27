@@ -69,6 +69,10 @@ public class Estoque {
 					atendente.menssagemNaoEncontrada(titulo);
 				}
 			}
+			
+			default ->{
+				atendente.mensagemErroPrograma();
+			}
 		}
 	}
 }

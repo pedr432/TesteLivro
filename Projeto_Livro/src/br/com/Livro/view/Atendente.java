@@ -12,13 +12,13 @@ public class Atendente {
 	}
 	
 	public int menuPrincipal() {
-		System.out.println("========BIBLIOTECA=======");
-		System.out.println("| 1 - Cadastrar Livros  |");
-		System.out.println("| 2 - Listar os Livros  |");
-		System.out.println("| 3 - Remover Livros    |");
-		System.out.println("| 4 - Buscar Livros     |");
-		System.out.println("| 0 - Sair              |");
-		System.out.println("+=======================+");
+		System.out.println("+=======BIBLIOTECA=======+");
+		System.out.println("| 1 - Cadastrar Livros   |");
+		System.out.println("| 2 - Listar os Livros   |");
+		System.out.println("| 3 - Remover Livros     |");
+		System.out.println("| 4 - Buscar Livros      |");
+		System.out.println("| 0 - Sair               |");
+		System.out.println("+========================+");
 		int opcao = los.nextInt();
 		los.nextLine();
 		return opcao;
@@ -72,5 +72,9 @@ public class Atendente {
 	
 	public void finalizarLivro() {
 		System.out.println("Sistema Encerrado!!!");
+	}
+	
+	public void mensagemErroPrograma() {
+		System.out.println("Erro! Digite um dos numeros abaixo  ⬇");
 	}
 }
